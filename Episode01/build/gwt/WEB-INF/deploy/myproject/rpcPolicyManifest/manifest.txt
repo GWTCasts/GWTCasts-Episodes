@@ -1,0 +1,3 @@
+# Module myproject
+# RPC service class, partial path of RPC policy file
+com.gwtcasts.client.GreetingService, D9070FEEFE1CCC7D3AB5037284E35996.gwt.rpc
