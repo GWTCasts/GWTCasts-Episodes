@@ -1,0 +1,20 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+
+# gwt caches and compiled units #
+war/
+gwt-unitCache/
+build/
+.gradle/
+.settings/
+.gwt/
+
+# boilerplate generated classes #
+.apt_generated/
+
+# more caches and things from deploy #
+war/WEB-INF/deploy/
+war/WEB-INF/classes/
