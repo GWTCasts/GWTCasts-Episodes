@@ -1,5 +1,5 @@
 package com.gwtcasts.mvp.client;
 
-public class MvpContext {
+public interface MvpContext {
 
 }

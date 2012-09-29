@@ -1,6 +1,7 @@
 package com.gwtcasts.mvp.client.amazon;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.ParagraphElement;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -11,7 +12,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasText;
 import com.google.gwt.user.client.ui.Widget;
 
-public class AmazonViewImpl extends Composite implements AmazonView, HasText {
+public class AmazonViewImpl extends Composite implements AmazonView{
 
 	private static AmazonViewImplUiBinder uiBinder = GWT
 			.create(AmazonViewImplUiBinder.class);
@@ -27,6 +28,9 @@ public class AmazonViewImpl extends Composite implements AmazonView, HasText {
 
 	@UiField
 	Button button;
+	
+	@UiField
+	ParagraphElement title;
 
 	public AmazonViewImpl(String firstName) {
 		initWidget(uiBinder.createAndBindUi(this));
@@ -38,12 +42,12 @@ public class AmazonViewImpl extends Composite implements AmazonView, HasText {
 		Window.alert("Hello!");
 	}
 
-	public void setText(String text) {
-		button.setText(text);
+	public void setTitle(String text) {
+		title.setInnerText(text);
 	}
 
-	public String getText() {
-		return button.getText();
+	public String getTitle() {
+		return title.getInnerText();
 	}
 
 	@Override

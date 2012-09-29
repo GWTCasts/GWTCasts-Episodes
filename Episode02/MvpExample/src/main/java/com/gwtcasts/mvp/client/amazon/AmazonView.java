@@ -9,5 +9,6 @@ public interface AmazonView extends IsWidget{
 	}
 
 	public void setPresenter(Presenter presenter);
+	public void setTitle(String title);
 		
 }

@@ -18,6 +18,8 @@ public class AmazonPlace extends Place {
 
 	public AmazonPlace(String token) {
 		this.token = token;
+		if("NOTE".equals(token))
+			this.title = "The wild the untame the Amazon";
 	}
 
 	public String getToken() {

@@ -7,13 +7,18 @@
 		}
 	</ui:style>
 	<g:DockLayoutPanel unit="EM" width="100%" height="100%">
-		<g:north size="5">
+		<g:north size="6">
 			<g:HTMLPanel>
 				<h1>MVP Example</h1>
 			</g:HTMLPanel>
 		</g:north>
 		<g:west size="7.7">
-			<g:HTMLPanel />
+			<g:HTMLPanel>
+				<ul>
+					<li><a href="#AmazonPlace: ">Amazon</a></li>
+					<li><a href="#MississippiPlace: ">Mississippi</a></li>
+				</ul>
+			</g:HTMLPanel>
 		</g:west>
 		<g:south size="5">
 			<g:HTMLPanel />

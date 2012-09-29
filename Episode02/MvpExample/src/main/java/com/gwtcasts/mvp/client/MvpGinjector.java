@@ -5,9 +5,10 @@ import com.google.gwt.inject.client.Ginjector;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtcasts.mvp.client.amazon.AmazonView;
+import com.gwtcasts.mvp.client.mississippi.MississippiView;
 
-@GinModules({MvpToolModule.class})
-public interface MvpToolGinjector extends Ginjector {
+@GinModules({MvpModule.class})
+public interface MvpGinjector extends Ginjector {
 
     public EventBus getEventBus();
 
@@ -15,6 +16,10 @@ public interface MvpToolGinjector extends Ginjector {
 
     public AmazonView getAmazonView();
 
-    public MvpContext getContext();
+    public MississippiView getMississippiView();
+
+    public MainView getMainView();
+
+    public MvpContextImpl getContext();
 
 }

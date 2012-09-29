@@ -9,12 +9,14 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import com.gwtcasts.mvp.client.amazon.AmazonView;
 import com.gwtcasts.mvp.client.amazon.AmazonViewImpl;
+import com.gwtcasts.mvp.client.mississippi.MississippiView;
+import com.gwtcasts.mvp.client.mississippi.MississippiViewImpl;
 
 /**
  * @author Gordon Pike
  * 
  */
-public class MvpToolModule extends AbstractGinModule {
+public class MvpModule extends AbstractGinModule {
 
 	@Override
 	protected void configure() {
@@ -26,8 +28,12 @@ public class MvpToolModule extends AbstractGinModule {
 
 		bind(AmazonView.class).to(AmazonViewImpl.class).in(Singleton.class);
 
+		bind(MississippiView.class).to(MississippiViewImpl.class).in(Singleton.class);
+
+		bind(MainView.class).to(MainViewImpl.class).in(Singleton.class);
+
 		bind(MvpContext.class).to(
-				MvpContext.class).in(Singleton.class);
+				MvpContextImpl.class).in(Singleton.class);
 	}
 
 	static class PlaceProvider implements Provider<PlaceController> {

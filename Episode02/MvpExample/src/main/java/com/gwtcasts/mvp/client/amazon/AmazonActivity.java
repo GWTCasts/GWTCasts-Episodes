@@ -21,7 +21,12 @@ public class AmazonActivity extends MvpActivity<AmazonView, AmazonPlace, MvpCont
 	public void start(AcceptsOneWidget panel, EventBus eventBus) {
         this.eventBus = eventBus;
         getView().setPresenter(this);
-        panel.setWidget(getView());	}
+        panel.setWidget(getView());
+        if(getPlace().getTitle() != null)
+        	getView().setTitle(getPlace().getTitle());
+        else
+        	getView().setTitle("");
+    }
 
 	@Override
 	public void onButtonClicked() {
