@@ -5,6 +5,7 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.gwtcasts.mvp.client.MvpActivity;
 import com.gwtcasts.mvp.client.MvpContext;
+import com.gwtcasts.mvp.client.mississippi.MississippiPlace;
 
 public class AmazonActivity extends MvpActivity<AmazonView, AmazonPlace, MvpContext> implements AmazonView.Presenter {
 
@@ -30,7 +31,7 @@ public class AmazonActivity extends MvpActivity<AmazonView, AmazonPlace, MvpCont
 
 	@Override
 	public void onButtonClicked() {
-		// TODO Auto-generated method stub
+		goTo(new MississippiPlace(null));
 		
 	}
 

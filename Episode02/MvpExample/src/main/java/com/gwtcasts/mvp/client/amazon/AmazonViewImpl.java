@@ -39,7 +39,8 @@ public class AmazonViewImpl extends Composite implements AmazonView{
 
 	@UiHandler("button")
 	void onClick(ClickEvent e) {
-		Window.alert("Hello!");
+		presenter.onButtonClicked();
+
 	}
 
 	public void setTitle(String text) {

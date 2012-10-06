@@ -31,7 +31,9 @@ public class MvpExample implements EntryPoint {
 
 		context = ginjector.getContext();
 		eventBus = ginjector.getEventBus();
-
+		
+		GreetingServiceAsync service = ginjector.getService();
+		
 		PlaceController placeController = ginjector.getPlaceController();
 
 		// Start ActivityManager for the main widget with our ActivityMapper

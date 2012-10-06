@@ -21,5 +21,7 @@ public interface MvpGinjector extends Ginjector {
     public MainView getMainView();
 
     public MvpContextImpl getContext();
-
+    
+    public GreetingServiceAsync getService();
+    
 }
